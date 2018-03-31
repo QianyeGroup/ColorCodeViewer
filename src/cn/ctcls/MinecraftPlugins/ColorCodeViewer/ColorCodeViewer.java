@@ -22,7 +22,7 @@ public class ColorCodeViewer extends JavaPlugin { //继承JavaPlugin
     @Override
     public void onEnable() { //加载信息
         CreateConfig();
-        getLogger().info(config.getString("InfoPrefix") + "§a插件已加载完成!");
+        getLogger().info("§bColorCodeViewer §e>>> §a插件已加载完成!");
     }
 
     @Override
