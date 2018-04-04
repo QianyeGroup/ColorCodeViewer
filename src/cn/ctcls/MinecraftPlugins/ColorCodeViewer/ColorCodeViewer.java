@@ -29,7 +29,6 @@ public class ColorCodeViewer extends JavaPlugin { //继承JavaPlugin
     public void onDisable() { //卸载信息
 
     }
-
     public void CreateConfig() { //配置文件检测
         if (!new File(getDataFolder() + File.separator + "config.yml").exists()) {
             saveDefaultConfig();
@@ -45,6 +44,7 @@ public class ColorCodeViewer extends JavaPlugin { //继承JavaPlugin
         }
     }
 
+    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) { //指令输出
         if (cmd.getName().equalsIgnoreCase("ccv")) {
             sender.sendMessage(config.getString("InfoPrefix") + "§a================§c颜色代码§a================");
