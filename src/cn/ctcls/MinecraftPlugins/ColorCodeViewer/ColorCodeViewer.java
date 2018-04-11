@@ -29,6 +29,7 @@ public class ColorCodeViewer extends JavaPlugin { //继承JavaPlugin
     public void onDisable() { //卸载信息
 
     }
+
     public void CreateConfig() { //配置文件检测
         if (!new File(getDataFolder() + File.separator + "config.yml").exists()) {
             saveDefaultConfig();
@@ -100,10 +101,6 @@ public class ColorCodeViewer extends JavaPlugin { //继承JavaPlugin
             sender.sendMessage(config.getString("InfoPrefix") + "§a&r §r默认字体");
             sender.sendMessage(config.getString("InfoPrefix") + "§a&l §r§l加粗§r         §a&o §r§o倾斜");
             sender.sendMessage(config.getString("InfoPrefix") + "§a&n §r§n下划线§r       §a&m §r§m删除线");
-            return true;
-        }
-        if (cmd.getName().equalsIgnoreCase("color.reload")) {
-            CreateConfig();
             return true;
         }
         return false;
