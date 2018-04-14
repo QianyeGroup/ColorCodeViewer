@@ -2,7 +2,7 @@ name: ColorCodeViewer
 author: 真心
 version: 1.0
 description: §a一条指令查看颜色代码表 §cGit：https://gitee.com/CTCL/ColorCodeViewer
-main: cn.ctcls.MinecraftPlugins.ColorCodeViewer.ColorCodeViewer
+main: cn.ctcls.MinecraftPlugins.ColorCodeViewer.Main
 commands:
   colorcodeviewer:           
     description: §a使用此指令可查看颜色代码表
