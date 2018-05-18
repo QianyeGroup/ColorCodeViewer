@@ -1,15 +1,15 @@
-package cn.ctcls.MinecraftPlugins.ColorCodeViewer;
+package cn.iqianye.MinecraftPlugins.ColorCodeViewer;
 
 /*
-©2016 - 2018 锦州千叶科技有限公司 All rights reserved.
-作者：真心 QQ：1307993674
-主页：https://blog.ctcls.cn
-码云：https://gitee.com/CTCL
-GitHub：https://github.com/CTCLS
+ * ©2016 - 2018 锦州千叶科技有限公司 All rights reserved.
+ * 作者：真心 QQ：1307993674
+ * 主页：https://blog.iqianye.cn
+ * 码云：https://gitee.com/QianyeGroup
+ * GitHub：https://github.com/QianyeGroup
  */
-//Java库
+
 import java.io.File;
-//Bukkit库
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -27,7 +27,7 @@ public class Main extends JavaPlugin { //继承JavaPlugin
 
     @Override
     public void onDisable() { //卸载信息
-
+    	
     }
 
     public void CreateConfig() { //配置文件检测
